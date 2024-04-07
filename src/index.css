@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-loader {
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background: 
+    radial-gradient(farthest-side,#FFFFFF 95%,#0000) 50% 1px/24px 24px no-repeat,
+    radial-gradient(farthest-side,#0000 calc(100% - 28px),#000000 0);
+  animation:s9 2s infinite linear;
+}
+@keyframes s9 {to{transform: rotate(1turn)}}
